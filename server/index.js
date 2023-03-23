@@ -17,7 +17,7 @@ const balances = {
   "04de402477423e5828691c62582648cbf233a1b2a4a597d19f880303a5f0a2b696515ed0474665c3078ceb0a14fbba5f0e98c6b19b2796112c831b3fdca9629869": 75,
   //3aaebf5430268380d1f1409573c4bf93e955188854e90d1e0f8ee99641351f03
 };
-
+  
 app.get("/balance/:address", (req, res) => {
   const { address } = req.params;
   const balance = balances[address] || 0;
